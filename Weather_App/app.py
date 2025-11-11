@@ -14,7 +14,7 @@ owm = pyowm.OWM(api_key)
 mgr = owm.weather_manager()
 
 st.title("Weather Forecaster")
-st.write("## *Made by Aayush with* :heart:")
+st.write("## by Aayush Singh")
 st.write("### Enter the city name, choose a Temperature unit and a graph type:")
 
 location = st.text_input("Name of The City :", "")
