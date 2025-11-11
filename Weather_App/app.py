@@ -23,6 +23,8 @@ graph = st.selectbox("📊 Select Graph Type:", ('Bar Graph', 'Line Graph'))
 degree = 'C' if units == 'celsius' else 'F'
 sign = u"\N{DEGREE SIGN}"
 
+from datetime import datetime, timezone
+
 def get_temperature():
     try:
         forecaster = mgr.forecast_at_place(location, '3h')
@@ -31,8 +33,9 @@ def get_temperature():
         days, temp_min, temp_max, dates_list = [], [], [], []
 
         for weather in forecast:
-            day = datetime.fromtimestamp(weather.reference_time(), datetime.UTC)
+            day = datetime.fromtimestamp(weather.reference_time(), timezone.utc)
             date = day.date()
+
             if date not in dates_list:
                 dates_list.append(date)
                 temp_min.append(None)
