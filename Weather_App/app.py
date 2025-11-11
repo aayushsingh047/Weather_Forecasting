@@ -14,7 +14,7 @@ mgr = owm.weather_manager()
 
 st.title("🌦️ Weather Forecaster")
 st.write("### by Aayush Singh")
-st.write("Enter your city name, select the unit and graph type below 👇")
+st.write("Enter your city name, select the unit and graph type below ")
 
 location = st.text_input("🏙️ City Name (e.g., Delhi, IN):", "")
 units = st.selectbox("🌡 Select Temperature Unit:", ('celsius', 'fahrenheit'))
