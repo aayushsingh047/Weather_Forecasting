@@ -13,7 +13,7 @@ owm = pyowm.OWM(api_key)
 mgr = owm.weather_manager()
 
 st.title("🌦️ Weather Forecaster")
-st.write("### by Aayush Singh")
+st.write("### by Aayush Singh, Hridyansh Verma And Nisha")
 st.write("Enter your city name, select the unit and graph type below ")
 
 location = st.text_input("🏙️ City Name (e.g., Delhi, IN):", "")
