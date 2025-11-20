@@ -2,7 +2,7 @@
 
 
 
-###  Created by **Aayush Singh**
+###  Created by **Aayush, Hridyansh and Nisha**
 
 A simple, elegant, and interactive **Weather Forecasting Web App** built with **Streamlit** and **OpenWeatherMap API**.  
 It allows users to get **current weather conditions** and a **5-day forecast** (Min & Max temperatures) for any city worldwide .
